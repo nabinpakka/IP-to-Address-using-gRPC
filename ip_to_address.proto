@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+message Ip{
+    string ip = 1;
+}
+
+service IpLocation{
+    rpc GetLocationIp(Ip) returns (Ip) {}
+}
